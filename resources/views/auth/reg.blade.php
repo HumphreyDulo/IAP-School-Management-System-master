@@ -34,33 +34,3 @@
 	<button><a href="\home"><i class="fa fa-sign-in" aria-hidden="true"></i> Back</a></button>
 </div>
 
-<div class="container">
-	<div>
-		<h1>COURSE DETAILS</h1>
-	</div>
-
-	<table class="table table-hover">
-		<thead>
-
-			<th>Course Name</th>
-			<th>Course ID</th>
-			<th>Student ID</th>
-
-
-
-
-		</thead>
-		<tbody>
-			
-			@foreach ($list as $item)
-			<tr>
-				<td>{{ $item->coursename }}</td>
-				<td>{{ $item->cid }}</td>
-				<td>{{ $item->sid }}</td>
-
-			</tr>
-			@endforeach
-		</tbody>
-	</table>
-	<!-- <li><a href="\home"><i class="fa fa-outdent" aria-hidden="true"></i> Back</a></li>-->
-</div>
